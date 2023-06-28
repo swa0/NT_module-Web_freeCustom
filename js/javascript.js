@@ -808,7 +808,7 @@ $(function(){
         var innerPageLeftSide_userLevelBG;
         var innerPageLeftSide_userLevelP;
         var innerPageLeftSide_joinedDays;
-        var innerPageLeftSide_quickBtnP;
+        var innerPageLeftSide_quickBtnStyleP;
         var innerPageLeftSide_innerNavBG_HOV;
         var innerPageLeftSide_innerNavP;
         var innerPageLeftSide_innerNavI;
@@ -904,10 +904,10 @@ $(function(){
                 innerPageLeftSide_joinedDays= $(this).val();
                 $("main.innerPage .center .leftSide p.joinDay").addClass("edited");
                 $(this).closest(".colorBlock").find("p").text(innerPageLeftSide_userLevelP);
-            }   else if($(this).hasClass("innerPageLeftSide_quickBtnP")){
-                innerPageLeftSide_quickBtnP= $(this).val();
-                $("main.innerPage .center .leftSide .quickSelect li .quickBtn").addClass("edited");
-                $(this).closest(".colorBlock").find("p").text(innerPageLeftSide_quickBtnP);
+            }   else if($(this).hasClass("innerPageLeftSide_quickBtnStyleP")){
+                innerPageLeftSide_quickBtnStyleP= $(this).val();
+                $("main.innerPage .center .leftSide .quickSelect li .quickBtnStyle").addClass("edited");
+                $(this).closest(".colorBlock").find("p").text(innerPageLeftSide_quickBtnStyleP);
             }   else if($(this).hasClass("innerPageLeftSide_innerNavBG_HOV")){
                 innerPageLeftSide_innerNavBG_HOV= $(this).val();
                 $("main.innerPage .center .leftSide .content .innerNav li").addClass("edited");
@@ -957,7 +957,7 @@ $(function(){
         $(':root').css('--innerPageLeftSide_userLevelBG', innerPageLeftSide_userLevelBG);
         $(':root').css('--innerPageLeftSide_userLevelP', innerPageLeftSide_userLevelP);
         $(':root').css('--innerPageLeftSide_joinedDays', innerPageLeftSide_joinedDays);
-        $(':root').css('--innerPageLeftSide_quickBtnP', innerPageLeftSide_quickBtnP);
+        $(':root').css('--innerPageLeftSide_quickBtnStyleP', innerPageLeftSide_quickBtnStyleP);
         $(':root').css('--innerPageLeftSide_innerNavBG_HOV', innerPageLeftSide_innerNavBG_HOV);
         $(':root').css('--innerPageLeftSide_innerNavP', innerPageLeftSide_innerNavP);
         $(':root').css('--innerPageLeftSide_innerNavI', innerPageLeftSide_innerNavI);
@@ -965,8 +965,8 @@ $(function(){
         $(':root').css('--innerPageLeftSide_innerNavBG_HOVbefore', innerPageLeftSide_innerNavBG_HOVbefore);
     })
 
-    $("aside.colorSelector form .custom li .quickBtn").click(function(){
-        $(".filter, .jumpWindow.quickBtnEdit")
+    $("aside.colorSelector form .custom li .quickBtnStyle").click(function(){
+        $(".filter, .jumpWindow.quickBtnStyleEdit")
         .addClass("display")
         .siblings().removeClass("display");
     })

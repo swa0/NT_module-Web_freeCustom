@@ -533,25 +533,14 @@ main.innerPage .center .leftSide p.joinDay {
   font-weight: bold;
 }
 
-main.innerPage .center .leftSide .quickSelect li .quickBtn {
-  background: -webkit-gradient(linear, left bottom, left top, from(var(--accentColor_2)), color-stop(50%, var(--mainColor)), to(var(--accentColor_2)));
-  background: linear-gradient(to top, var(--accentColor_2) 0%, var(--mainColor) 50%, var(--accentColor_2) 100%);
-  border-radius: 50px;
-  border: 1px solid var(--mainColor);
-}
-main.innerPage .center .leftSide .quickSelect li .quickBtn:hover, main.innerPage .center .leftSide .quickSelect li .quickBtn:active, main.innerPage .center .leftSide .quickSelect li .quickBtn.active {
-  background: var(--mainColor);
-}
-
-main.innerPage .center .leftSide .quickSelect li .quickBtn p {
-  color: #7c5f30;
+main.innerPage .center .leftSide .quickSelect li .quickBtnStyle p {
   font-size: 18px;
   font-weight: bold;
 }
 
-main.innerPage .center .leftSide .quickSelect li .quickBtn:hover p,
-main.innerPage .center .leftSide .quickSelect li .quickBtn:active p,
-main.innerPage .center .leftSide .quickSelect li .quickBtn.active p {
+main.innerPage .center .leftSide .quickSelect li .quickBtnStyle:hover p,
+main.innerPage .center .leftSide .quickSelect li .quickBtnStyle:active p,
+main.innerPage .center .leftSide .quickSelect li .quickBtnStyle.active p {
   color: #ffffff;
 }
 
@@ -1838,6 +1827,19 @@ aside.cs {
   background: var(--mainColor);
 }
 
+.quickBtnStyle {
+  background: -webkit-gradient(linear, left bottom, left top, from(var(--accentColor_2)), color-stop(50%, var(--mainColor)), to(var(--accentColor_2)));
+  background: linear-gradient(to top, var(--accentColor_2) 0%, var(--mainColor) 50%, var(--accentColor_2) 100%);
+  border-radius: 50px;
+  border: 1px solid var(--mainColor);
+}
+.quickBtnStyle a p {
+  color: #7c5f30;
+}
+.quickBtnStyle:hover, .quickBtnStyle:active, .quickBtnStyle.active {
+  background: var(--mainColor);
+}
+
 .inputStyle_1 {
   background: none;
   border-radius: 5px;
@@ -1901,12 +1903,12 @@ aside.cs {
   --innerPageLeftSide_userLevelBG: #cfb53d;
   --innerPageLeftSide_userLevelP: #ffffff;
   --innerPageLeftSide_joinedDays: #686868;
-  --innerPageLeftSide_quickBtnBG: linear-gradient(to top, #fae8c1 0%, #c4a167 50%, #fae8c1 100%);
-  --innerPageLeftSide_quickBtnBG_HOV: #c4a167;
-  --innerPageLeftSide_quickBtnBorder: #c4a167;
-  --innerPageLeftSide_quickBtnP: #7c5f30;
-  --innerPageLeftSide_quickBtnP_HOV: #ffffff;
-  --innerPageLeftSide_quickBtnName: #000000;
+  --innerPageLeftSide_quickBtnStyleBG: linear-gradient(to top, #fae8c1 0%, #c4a167 50%, #fae8c1 100%);
+  --innerPageLeftSide_quickBtnStyleBG_HOV: #c4a167;
+  --innerPageLeftSide_quickBtnStyleBorder: #c4a167;
+  --innerPageLeftSide_quickBtnStyleP: #7c5f30;
+  --innerPageLeftSide_quickBtnStyleP_HOV: #ffffff;
+  --innerPageLeftSide_quickBtnStyleName: #000000;
   --innerPageLeftSide_innerNavBorder: #cccccc;
   --innerPageLeftSide_innerNavP: #000000;
   --innerPageLeftSide_innerNavP_HOV: #7c5f30;
@@ -2097,26 +2099,26 @@ main.innerPage .center .leftSide p.joinDay.edited {
   color: var(--innerPageLeftSide_joinedDays);
 }
 
-main.innerPage .center .leftSide .quickSelect li .quickBtn.edited a {
-  background: var(--innerPageLeftSide_quickBtnBG);
-  border-color: var(--innerPageLeftSide_quickBtnBorder);
+main.innerPage .center .leftSide .quickSelect li .quickBtnStyle.edited a {
+  background: var(--innerPageLeftSide_quickBtnStyleBG);
+  border-color: var(--innerPageLeftSide_quickBtnStyleBorder);
 }
-main.innerPage .center .leftSide .quickSelect li .quickBtn.edited:hover a, main.innerPage .center .leftSide .quickSelect li .quickBtn.edited:active a, main.innerPage .center .leftSide .quickSelect li .quickBtn.edited.active a {
-  background: var(--innerPageLeftSide_quickBtnBG_HOV);
-}
-
-main.innerPage .center .leftSide .quickSelect li .quickBtn.edited p {
-  color: var(--innerPageLeftSide_quickBtnP);
+main.innerPage .center .leftSide .quickSelect li .quickBtnStyle.edited:hover a, main.innerPage .center .leftSide .quickSelect li .quickBtnStyle.edited:active a, main.innerPage .center .leftSide .quickSelect li .quickBtnStyle.edited.active a {
+  background: var(--innerPageLeftSide_quickBtnStyleBG_HOV);
 }
 
-main.innerPage .center .leftSide .quickSelect li .quickBtn.edited:hover p,
-main.innerPage .center .leftSide .quickSelect li .quickBtn.edited:active p,
-main.innerPage .center .leftSide .quickSelect li .quickBtn.edited.active p {
+main.innerPage .center .leftSide .quickSelect li .quickBtnStyle.edited p {
+  color: var(--innerPageLeftSide_quickBtnStyleP);
+}
+
+main.innerPage .center .leftSide .quickSelect li .quickBtnStyle.edited:hover p,
+main.innerPage .center .leftSide .quickSelect li .quickBtnStyle.edited:active p,
+main.innerPage .center .leftSide .quickSelect li .quickBtnStyle.edited.active p {
   color: var(--innerPageLeftSide_innerNavI_HOV);
 }
 
 main.innerPage .center .leftSide .quickSelect li p.btnName.edited {
-  color: var(--innerPageLeftSide_quickBtnName);
+  color: var(--innerPageLeftSide_quickBtnStyleName);
 }
 
 main.innerPage .center .leftSide .innerNav {
@@ -2207,6 +2209,19 @@ main.innerPage .center .leftSide .innerNav li.edited.active a p {
   background: linear-gradient(to bottom, var(--btnStyle_4_BG1_HOV) 40%, var(--btnStyle_4_BG2_HOV) 100%);
   border: 1px solid var(--btnStyle_4_Border_HOV);
   color: var(--btnStyle_4_P_HOV);
+}
+
+.quickBtnStyle.edited {
+  background: -webkit-gradient(linear, left bottom, left top, from(var(--accentColor_2)), color-stop(50%, var(--mainColor)), to(var(--accentColor_2)));
+  background: linear-gradient(to top, var(--accentColor_2) 0%, var(--mainColor) 50%, var(--accentColor_2) 100%);
+  border-radius: 50px;
+  border: 1px solid var(--mainColor);
+}
+.quickBtnStyle.edited a p {
+  color: #7c5f30;
+}
+.quickBtnStyle.edited:hover, .quickBtnStyle.edited:active, .quickBtnStyle.edited.active {
+  background: var(--mainColor);
 }
 
 bg {
@@ -3186,7 +3201,7 @@ html body .innerPage .center > div.leftSide .content .quickSelect li {
   width: 32%;
   height: auto;
 }
-html body .innerPage .center > div.leftSide .content .quickSelect li .quickBtn {
+html body .innerPage .center > div.leftSide .content .quickSelect li .quickBtnStyle {
   width: 42px;
   height: 42px;
   margin: 0 auto;
@@ -3194,7 +3209,7 @@ html body .innerPage .center > div.leftSide .content .quickSelect li .quickBtn {
   transition: all 0.4s;
   cursor: pointer;
 }
-html body .innerPage .center > div.leftSide .content .quickSelect li .quickBtn a {
+html body .innerPage .center > div.leftSide .content .quickSelect li .quickBtnStyle a {
   width: 100%;
   height: 100%;
   display: -webkit-box;
@@ -6199,7 +6214,7 @@ html body aside.colorSelector form label .colorBlock.quick ul li {
       -ms-flex-pack: center;
           justify-content: center;
 }
-html body aside.colorSelector form label .colorBlock.quick ul li .quickBtn {
+html body aside.colorSelector form label .colorBlock.quick ul li .quickBtnStyle {
   width: 100%;
   height: 35px;
   background: -webkit-gradient(linear, left bottom, left top, from(var(--accentColor_2)), color-stop(50%, var(--mainColor)), to(var(--accentColor_2)));
@@ -6207,13 +6222,13 @@ html body aside.colorSelector form label .colorBlock.quick ul li .quickBtn {
   border-radius: 50px;
   border: 1px solid var(--mainColor);
 }
-html body aside.colorSelector form label .colorBlock.quick ul li .quickBtn:hover, html body aside.colorSelector form label .colorBlock.quick ul li .quickBtn:active, html body aside.colorSelector form label .colorBlock.quick ul li .quickBtn.active {
+html body aside.colorSelector form label .colorBlock.quick ul li .quickBtnStyle:hover, html body aside.colorSelector form label .colorBlock.quick ul li .quickBtnStyle:active, html body aside.colorSelector form label .colorBlock.quick ul li .quickBtnStyle.active {
   background: var(--mainColor);
 }
-html body aside.colorSelector form label .colorBlock.quick ul li .quickBtn:hover a p, html body aside.colorSelector form label .colorBlock.quick ul li .quickBtn:active a p, html body aside.colorSelector form label .colorBlock.quick ul li .quickBtn.active a p {
+html body aside.colorSelector form label .colorBlock.quick ul li .quickBtnStyle:hover a p, html body aside.colorSelector form label .colorBlock.quick ul li .quickBtnStyle:active a p, html body aside.colorSelector form label .colorBlock.quick ul li .quickBtnStyle.active a p {
   color: #ffffff;
 }
-html body aside.colorSelector form label .colorBlock.quick ul li .quickBtn a {
+html body aside.colorSelector form label .colorBlock.quick ul li .quickBtnStyle a {
   width: 100%;
   height: 100%;
   display: -webkit-box;
@@ -6226,7 +6241,7 @@ html body aside.colorSelector form label .colorBlock.quick ul li .quickBtn a {
       -ms-flex-pack: center;
           justify-content: center;
 }
-html body aside.colorSelector form label .colorBlock.quick ul li .quickBtn a p {
+html body aside.colorSelector form label .colorBlock.quick ul li .quickBtnStyle a p {
   color: #7c5f30;
   text-align: center;
   margin: 0;

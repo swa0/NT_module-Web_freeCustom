@@ -510,23 +510,14 @@ main.innerPage .center .leftSide p.joinDay {  //可自定義
     font-size: 14px;
     font-weight: bold;
 }
-main.innerPage .center .leftSide .quickSelect li .quickBtn { //個別調整 //可自定義
-    background: $linear_1;
-    border-radius: 50px;
-    border: 1px solid $Border_color_4;
-
-    &:hover,&:active,&.active {
-        background: var(--mainColor);
-    }
-}
-main.innerPage .center .leftSide .quickSelect li .quickBtn p { //可自定義
-    color: $mainColor_subD;
+main.innerPage .center .leftSide .quickSelect li .quickBtnStyle p { //可自定義
+    // color: $mainColor_subD;
     font-size: 18px;
     font-weight: bold;
 }
-main.innerPage .center .leftSide .quickSelect li .quickBtn:hover p, //可自定義
-main.innerPage .center .leftSide .quickSelect li .quickBtn:active p,
-main.innerPage .center .leftSide .quickSelect li .quickBtn.active p {
+main.innerPage .center .leftSide .quickSelect li .quickBtnStyle:hover p, //可自定義
+main.innerPage .center .leftSide .quickSelect li .quickBtnStyle:active p,
+main.innerPage .center .leftSide .quickSelect li .quickBtnStyle.active p {
     color: $Font_color_1;
 }
 main.innerPage .center .leftSide .quickSelect li p.btnName { //可自定義
@@ -1763,6 +1754,22 @@ aside.cs {
     &:hover,&:active,&.active {
         color: $Font_color_1;
         background: var(--mainColor);;
+    }
+}
+.quickBtnStyle {
+    background: linear-gradient(to top, var(--accentColor_2) 0%, var(--mainColor) 50%, var(--accentColor_2) 100%);
+    border-radius: 50px;
+    border: 1px solid var(--mainColor);
+    
+    a {
+
+        p {
+            color: $mainColor_subD;
+        }
+    }
+
+    &:hover,&:active,&.active {
+        background: var(--mainColor);
     }
 }
 

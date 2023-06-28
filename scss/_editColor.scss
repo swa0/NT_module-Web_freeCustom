@@ -25,12 +25,12 @@
     --innerPageLeftSide_userLevelBG: #cfb53d;
     --innerPageLeftSide_userLevelP: #ffffff;
     --innerPageLeftSide_joinedDays: #686868;
-    --innerPageLeftSide_quickBtnBG: linear-gradient(to top, #fae8c1 0%, #c4a167 50%, #fae8c1 100%);
-    --innerPageLeftSide_quickBtnBG_HOV: #c4a167;
-    --innerPageLeftSide_quickBtnBorder: #c4a167;
-    --innerPageLeftSide_quickBtnP: #7c5f30;
-    --innerPageLeftSide_quickBtnP_HOV: #ffffff;
-    --innerPageLeftSide_quickBtnName: #000000;
+    --innerPageLeftSide_quickBtnStyleBG: linear-gradient(to top, #fae8c1 0%, #c4a167 50%, #fae8c1 100%);
+    --innerPageLeftSide_quickBtnStyleBG_HOV: #c4a167;
+    --innerPageLeftSide_quickBtnStyleBorder: #c4a167;
+    --innerPageLeftSide_quickBtnStyleP: #7c5f30;
+    --innerPageLeftSide_quickBtnStyleP_HOV: #ffffff;
+    --innerPageLeftSide_quickBtnStyleName: #000000;
     --innerPageLeftSide_innerNavBorder: #cccccc;
     --innerPageLeftSide_innerNavP: #000000;
     --innerPageLeftSide_innerNavP_HOV: #7c5f30;
@@ -242,31 +242,31 @@ main.innerPage .center .leftSide p.joinDay.edited {
     color: var(--innerPageLeftSide_joinedDays);
 }
 //存轉提按鈕
-main.innerPage .center .leftSide .quickSelect li .quickBtn.edited {
+main.innerPage .center .leftSide .quickSelect li .quickBtnStyle.edited {
     
     a {
-        background: var(--innerPageLeftSide_quickBtnBG);
-        border-color: var(--innerPageLeftSide_quickBtnBorder);
+        background: var(--innerPageLeftSide_quickBtnStyleBG);
+        border-color: var(--innerPageLeftSide_quickBtnStyleBorder);
     }
 
     &:hover,&:active,&.active {
 
         a {
-            background: var(--innerPageLeftSide_quickBtnBG_HOV);
+            background: var(--innerPageLeftSide_quickBtnStyleBG_HOV);
         }
         
     }
 }
-main.innerPage .center .leftSide .quickSelect li .quickBtn.edited p {
-    color: var(--innerPageLeftSide_quickBtnP);
+main.innerPage .center .leftSide .quickSelect li .quickBtnStyle.edited p {
+    color: var(--innerPageLeftSide_quickBtnStyleP);
 }
-main.innerPage .center .leftSide .quickSelect li .quickBtn.edited:hover p,
-main.innerPage .center .leftSide .quickSelect li .quickBtn.edited:active p,
-main.innerPage .center .leftSide .quickSelect li .quickBtn.edited.active p {
+main.innerPage .center .leftSide .quickSelect li .quickBtnStyle.edited:hover p,
+main.innerPage .center .leftSide .quickSelect li .quickBtnStyle.edited:active p,
+main.innerPage .center .leftSide .quickSelect li .quickBtnStyle.edited.active p {
     color: var(--innerPageLeftSide_innerNavI_HOV);
 }
 main.innerPage .center .leftSide .quickSelect li p.btnName.edited {
-    color: var(--innerPageLeftSide_quickBtnName);
+    color: var(--innerPageLeftSide_quickBtnStyleName);
 }
 //nav
 main.innerPage .center .leftSide .innerNav {
@@ -361,5 +361,21 @@ main.innerPage .center .leftSide .innerNav li.edited.active a p {
         background: linear-gradient(to bottom, var(--btnStyle_4_BG1_HOV) 40%, var(--btnStyle_4_BG2_HOV) 100%);
         border: 1px solid var(--btnStyle_4_Border_HOV);
         color: var(--btnStyle_4_P_HOV);
+    }
+}
+.quickBtnStyle.edited { //快速按鈕
+    background: linear-gradient(to top, var(--accentColor_2) 0%, var(--mainColor) 50%, var(--accentColor_2) 100%);
+    border-radius: 50px;
+    border: 1px solid var(--mainColor);
+    
+    a {
+
+        p {
+            color: $mainColor_subD;
+        }
+    }
+
+    &:hover,&:active,&.active {
+        background: var(--mainColor);
     }
 }
