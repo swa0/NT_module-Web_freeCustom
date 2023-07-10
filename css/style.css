@@ -1836,12 +1836,22 @@ aside.cs {
   background: linear-gradient(to top, var(--accentColor_2) 0%, var(--mainColor) 50%, var(--accentColor_2) 100%);
   border-radius: 50px;
   border: 1px solid var(--mainColor);
+  color: #7c5f30;
+  font-size: 18px;
+  font-weight: bold;
+  overflow: hidden;
 }
-.quickBtnStyle a p {
+.quickBtnStyle p {
+  font-size: 18px;
+  font-weight: bold;
   color: #7c5f30;
 }
 .quickBtnStyle:hover, .quickBtnStyle:active, .quickBtnStyle.active {
   background: var(--mainColor);
+  color: #ffffff;
+}
+.quickBtnStyle:hover p, .quickBtnStyle:active p, .quickBtnStyle.active p {
+  color: #ffffff;
 }
 
 .inputStyle_1 {
@@ -1907,9 +1917,12 @@ aside.cs {
   --innerPageLeftSide_userLevelBG: #cfb53d;
   --innerPageLeftSide_userLevelP: #ffffff;
   --innerPageLeftSide_joinedDays: #686868;
-  --innerPageLeftSide_quickBtnStyleBG: linear-gradient(to top, #fae8c1 0%, #c4a167 50%, #fae8c1 100%);
+  --innerPageLeftSide_quickBtnStyleBG1: #fae8c1;
+  --innerPageLeftSide_quickBtnStyleBG2: #c4a167;
+  --innerPageLeftSide_quickBtnStyleBG3: #fae8c1;
   --innerPageLeftSide_quickBtnStyleBG_HOV: #c4a167;
   --innerPageLeftSide_quickBtnStyleBorder: #c4a167;
+  --innerPageLeftSide_quickBtnStyleBorder_HOV: #c4a167;
   --innerPageLeftSide_quickBtnStyleP: #7c5f30;
   --innerPageLeftSide_quickBtnStyleP_HOV: #ffffff;
   --innerPageLeftSide_quickBtnStyleName: #000000;
@@ -2103,24 +2116,6 @@ main.innerPage .center .leftSide p.joinDay.edited {
   color: var(--innerPageLeftSide_joinedDays);
 }
 
-main.innerPage .center .leftSide .quickSelect li .quickBtnStyle.edited a {
-  background: var(--innerPageLeftSide_quickBtnStyleBG);
-  border-color: var(--innerPageLeftSide_quickBtnStyleBorder);
-}
-main.innerPage .center .leftSide .quickSelect li .quickBtnStyle.edited:hover a, main.innerPage .center .leftSide .quickSelect li .quickBtnStyle.edited:active a, main.innerPage .center .leftSide .quickSelect li .quickBtnStyle.edited.active a {
-  background: var(--innerPageLeftSide_quickBtnStyleBG_HOV);
-}
-
-main.innerPage .center .leftSide .quickSelect li .quickBtnStyle.edited p {
-  color: var(--innerPageLeftSide_quickBtnStyleP);
-}
-
-main.innerPage .center .leftSide .quickSelect li .quickBtnStyle.edited:hover p,
-main.innerPage .center .leftSide .quickSelect li .quickBtnStyle.edited:active p,
-main.innerPage .center .leftSide .quickSelect li .quickBtnStyle.edited.active p {
-  color: var(--innerPageLeftSide_innerNavI_HOV);
-}
-
 main.innerPage .center .leftSide .quickSelect li p.btnName.edited {
   color: var(--innerPageLeftSide_quickBtnStyleName);
 }
@@ -2159,10 +2154,14 @@ main.innerPage .center .leftSide .innerNav li.edited.active a i {
   color: var(--innerPageLeftSide_innerNavI_HOV);
 }
 
-main.innerPage .center .leftSide .innerNav li.edited:hover a p,
-main.innerPage .center .leftSide .innerNav li.edited:active a p,
-main.innerPage .center .leftSide .innerNav li.edited.active a p {
-  color: var(--innerPageLeftSide_innerNavI_HOV);
+main.innerPage .center .midSide .midBottom .content form .selectBtn_Wrap button.edited:hover, main.innerPage .center .midSide .midBottom .content form .selectBtn_Wrap button.edited:active, main.innerPage .center .midSide .midBottom .content form .selectBtn_Wrap button.edited.active {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(40%, var(--btnStyle_3_BG1_HOV)), to(var(--btnStyle_3_BG1_HOV)));
+  background: linear-gradient(to bottom, var(--btnStyle_3_BG1_HOV) 40%, var(--btnStyle_3_BG1_HOV) 100%);
+  color: var(--btnStyle_3_P_HOV);
+}
+
+.jumpWindow.quickBtnStyleEdit .content label .outerBox p.btnName {
+  color: var(--innerPageLeftSide_quickBtnStyleName);
 }
 
 .btnStyle_1.edited {
@@ -2198,6 +2197,8 @@ main.innerPage .center .leftSide .innerNav li.edited.active a p {
   color: var(--btnStyle_3_P);
 }
 .btnStyle_3.edited:hover, .btnStyle_3.edited:active, .btnStyle_3.edited.active {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(40%, var(--btnStyle_3_BG1_HOV)), to(var(--btnStyle_3_BG1_HOV)));
+  background: linear-gradient(to bottom, var(--btnStyle_3_BG1_HOV) 40%, var(--btnStyle_3_BG1_HOV) 100%);
   color: var(--btnStyle_3_P_HOV);
   border-color: var(--btnStyle_3_Border_HOV);
 }
@@ -2216,16 +2217,25 @@ main.innerPage .center .leftSide .innerNav li.edited.active a p {
 }
 
 .quickBtnStyle.edited {
-  background: -webkit-gradient(linear, left bottom, left top, from(var(--accentColor_2)), color-stop(50%, var(--mainColor)), to(var(--accentColor_2)));
-  background: linear-gradient(to top, var(--accentColor_2) 0%, var(--mainColor) 50%, var(--accentColor_2) 100%);
-  border-radius: 50px;
-  border: 1px solid var(--mainColor);
+  background: -webkit-gradient(linear, left bottom, left top, from(var(--innerPageLeftSide_quickBtnStyleBG1)), color-stop(50%, var(--innerPageLeftSide_quickBtnStyleBG2)), to(var(--innerPageLeftSide_quickBtnStyleBG3)));
+  background: linear-gradient(to top, var(--innerPageLeftSide_quickBtnStyleBG1) 0%, var(--innerPageLeftSide_quickBtnStyleBG2) 50%, var(--innerPageLeftSide_quickBtnStyleBG3) 100%);
+  border: 1px solid var(--innerPageLeftSide_quickBtnStyleBorder);
+  color: var(--innerPageLeftSide_quickBtnStyleP);
+}
+.quickBtnStyle.edited a {
+  background: -webkit-gradient(linear, left bottom, left top, from(var(--innerPageLeftSide_quickBtnStyleBG1)), color-stop(50%, var(--innerPageLeftSide_quickBtnStyleBG2)), to(var(--innerPageLeftSide_quickBtnStyleBG3)));
+  background: linear-gradient(to top, var(--innerPageLeftSide_quickBtnStyleBG1) 0%, var(--innerPageLeftSide_quickBtnStyleBG2) 50%, var(--innerPageLeftSide_quickBtnStyleBG3) 100%);
 }
 .quickBtnStyle.edited a p {
-  color: #7c5f30;
+  color: var(--innerPageLeftSide_quickBtnStyleP);
 }
 .quickBtnStyle.edited:hover, .quickBtnStyle.edited:active, .quickBtnStyle.edited.active {
-  background: var(--mainColor);
+  background: var(--innerPageLeftSide_quickBtnStyleBG_HOV);
+  color: var(--innerPageLeftSide_quickBtnStyleP_HOV);
+  border: 1px solid var(--innerPageLeftSide_quickBtnStyleBorder_HOV);
+}
+.quickBtnStyle.edited:hover p, .quickBtnStyle.edited:active p, .quickBtnStyle.edited.active p {
+  color: var(--innerPageLeftSide_quickBtnStyleP_HOV);
 }
 
 bg {
@@ -6272,9 +6282,7 @@ html body aside.colorSelector form label button {
 html body aside.colorSelector form .submitSetting {
   width: auto;
   height: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   background: #ffffff;
   padding: 5px 10px;
   margin: 0 auto;
@@ -6574,6 +6582,104 @@ html body .filter .jumpWindow.eventWindow .content .eventRule .overflowBlock p {
 }
 html body .filter .jumpWindow.eventWindow .content .eventRule .overflowBlock p:last-child {
   margin-bottom: 0;
+}
+html body .filter .jumpWindow.quickBtnStyleEdit {
+  width: auto;
+}
+html body .filter .jumpWindow.quickBtnStyleEdit .content {
+  width: 100%;
+  padding: 20px;
+}
+html body .filter .jumpWindow.quickBtnStyleEdit .content label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 20px;
+}
+html body .filter .jumpWindow.quickBtnStyleEdit .content label p {
+  margin-right: 10px;
+}
+html body .filter .jumpWindow.quickBtnStyleEdit .content label .outerBox {
+  width: auto;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+html body .filter .jumpWindow.quickBtnStyleEdit .content label .outerBox button {
+  width: 40px;
+  height: 40px;
+  cursor: default;
+}
+html body .filter .jumpWindow.quickBtnStyleEdit .content label .outerBox button p {
+  margin: 0;
+}
+html body .filter .jumpWindow.quickBtnStyleEdit .content label .outerBox p {
+  font-size: 14px;
+  margin: 5px 0 0 0;
+}
+html body .filter .jumpWindow.quickBtnStyleEdit .content .changeBlock {
+  width: 100%;
+  height: auto;
+  display: none;
+}
+html body .filter .jumpWindow.quickBtnStyleEdit .content .changeBlock.display {
+  display: block;
+}
+html body .filter .jumpWindow.quickBtnStyleEdit .content .changeBlock .typeTitle {
+  width: 100%;
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+html body .filter .jumpWindow.quickBtnStyleEdit .content .changeBlock .colorList {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 10px;
+}
+html body .filter .jumpWindow.quickBtnStyleEdit .content .changeBlock .colorList .itemName {
+  width: 80px;
+  color: rgb(109, 109, 109);
+  font-size: 15px;
+  font-weight: bold;
+}
+html body .filter .jumpWindow.quickBtnStyleEdit .content .changeBlock .colorList .colorBlock {
+  width: 150px;
+  height: auto;
+  background: #eeeeee;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-right: 5px;
+  padding: 0 5px;
+}
+html body .filter .jumpWindow.quickBtnStyleEdit .content .changeBlock .colorList .colorBlock input {
+  width: 39px;
+  height: 39px;
 }
 html body .filter .jumpWindow.buttonEdit {
   width: auto;

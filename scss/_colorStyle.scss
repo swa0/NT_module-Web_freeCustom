@@ -1763,16 +1763,24 @@ aside.cs {
     background: linear-gradient(to top, var(--accentColor_2) 0%, var(--mainColor) 50%, var(--accentColor_2) 100%);
     border-radius: 50px;
     border: 1px solid var(--mainColor);
-    
-    a {
+    color: $mainColor_subD;
+    font-size: 18px;
+    font-weight: bold;
+    overflow: hidden;
 
-        p {
-            color: $mainColor_subD;
-        }
+    p {
+        font-size: 18px;
+        font-weight: bold;
+        color: $mainColor_subD;
     }
 
     &:hover,&:active,&.active {
         background: var(--mainColor);
+        color: $Font_color_1;
+        
+        p {
+            color: $Font_color_1;
+        }
     }
 }
 

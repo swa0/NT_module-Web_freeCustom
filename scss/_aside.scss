@@ -272,11 +272,14 @@ aside {
             .submitSetting {
                 width: auto;
                 height: auto;
-                display: flex;
+                display: none;
+                // display: flex;
                 background: #ffffff;
                 padding: 5px 10px;
                 margin: 0 auto;
             }
         }
+
+        
     }
 }

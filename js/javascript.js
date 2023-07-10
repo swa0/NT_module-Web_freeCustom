@@ -808,7 +808,6 @@ $(function(){
         var innerPageLeftSide_userLevelBG;
         var innerPageLeftSide_userLevelP;
         var innerPageLeftSide_joinedDays;
-        var innerPageLeftSide_quickBtnStyleP;
         var innerPageLeftSide_innerNavBG_HOV;
         var innerPageLeftSide_innerNavP;
         var innerPageLeftSide_innerNavI;
@@ -904,10 +903,6 @@ $(function(){
                 innerPageLeftSide_joinedDays= $(this).val();
                 $("main.innerPage .center .leftSide p.joinDay").addClass("edited");
                 $(this).closest(".colorBlock").find("p").text(innerPageLeftSide_userLevelP);
-            }   else if($(this).hasClass("innerPageLeftSide_quickBtnStyleP")){
-                innerPageLeftSide_quickBtnStyleP= $(this).val();
-                $("main.innerPage .center .leftSide .quickSelect li .quickBtnStyle").addClass("edited");
-                $(this).closest(".colorBlock").find("p").text(innerPageLeftSide_quickBtnStyleP);
             }   else if($(this).hasClass("innerPageLeftSide_innerNavBG_HOV")){
                 innerPageLeftSide_innerNavBG_HOV= $(this).val();
                 $("main.innerPage .center .leftSide .content .innerNav li").addClass("edited");
@@ -957,12 +952,89 @@ $(function(){
         $(':root').css('--innerPageLeftSide_userLevelBG', innerPageLeftSide_userLevelBG);
         $(':root').css('--innerPageLeftSide_userLevelP', innerPageLeftSide_userLevelP);
         $(':root').css('--innerPageLeftSide_joinedDays', innerPageLeftSide_joinedDays);
-        $(':root').css('--innerPageLeftSide_quickBtnStyleP', innerPageLeftSide_quickBtnStyleP);
         $(':root').css('--innerPageLeftSide_innerNavBG_HOV', innerPageLeftSide_innerNavBG_HOV);
         $(':root').css('--innerPageLeftSide_innerNavP', innerPageLeftSide_innerNavP);
         $(':root').css('--innerPageLeftSide_innerNavI', innerPageLeftSide_innerNavI);
         $(':root').css('--innerPageLeftSide_innerNavI_HOV', innerPageLeftSide_innerNavI_HOV);
         $(':root').css('--innerPageLeftSide_innerNavBG_HOVbefore', innerPageLeftSide_innerNavBG_HOVbefore);
+    })
+
+    //左側快速按鈕
+    $(".filter .jumpWindow.quickBtnStyleEdit .content input").on("change",function(){
+        var innerPageLeftSide_quickBtnStyleBG1;
+        var innerPageLeftSide_quickBtnStyleBG2;
+        var innerPageLeftSide_quickBtnStyleBG3;
+        var innerPageLeftSide_quickBtnStyleBG_HOV;
+        var innerPageLeftSide_quickBtnStyleBorder;
+        var innerPageLeftSide_quickBtnStyleBorder_HOV;
+        var innerPageLeftSide_quickBtnStyleP;
+        var innerPageLeftSide_quickBtnStyleP_HOV;
+        var innerPageLeftSide_quickBtnStyleName;
+
+        $(".jumpWindow.quickBtnStyleEdit .content input").each(function(){
+            if($(this).hasClass("quickBtnStyleBG1")){
+                innerPageLeftSide_quickBtnStyleBG1 = $(this).val();
+                $(".quickBtnStyle").addClass("edited");
+                $(this).closest(".colorBlock").find("p").text(innerPageLeftSide_quickBtnStyleBG1);
+            } else if($(this).hasClass("quickBtnStyleBG2")){
+                innerPageLeftSide_quickBtnStyleBG2 = $(this).val();
+                $(".quickBtnStyle").addClass("edited");
+                $(this).closest(".colorBlock").find("p").text(innerPageLeftSide_quickBtnStyleBG2);
+            } else if($(this).hasClass("quickBtnStyleBG3")){
+                innerPageLeftSide_quickBtnStyleBG3 = $(this).val();
+                $(".quickBtnStyle").addClass("edited");
+                $(this).closest(".colorBlock").find("p").text(innerPageLeftSide_quickBtnStyleBG3);
+            } else if($(this).hasClass("quickBtnStyleP")){
+                innerPageLeftSide_quickBtnStyleP = $(this).val();
+                $(".quickBtnStyle").addClass("edited");
+                $(this).closest(".colorBlock").find("p").text(innerPageLeftSide_quickBtnStyleP);
+            } else if($(this).hasClass("quickBtnStyleBorder")){
+                innerPageLeftSide_quickBtnStyleBorder = $(this).val();
+                $(".quickBtnStyle").addClass("edited");
+                $(this).closest(".colorBlock").find("p").text(innerPageLeftSide_quickBtnStyleBorder);
+            } else if($(this).hasClass("quickBtnStyleBG1_HOV")){
+                innerPageLeftSide_quickBtnStyleBG_HOV = $(this).val();
+                $(".quickBtnStyle").addClass("edited");
+                $(this).closest(".colorBlock").find("p").text(innerPageLeftSide_quickBtnStyleBG_HOV);
+            } else if($(this).hasClass("quickBtnStyleP_HOV")){
+                innerPageLeftSide_quickBtnStyleP_HOV = $(this).val();
+                $(".quickBtnStyle").addClass("edited");
+                $(this).closest(".colorBlock").find("p").text(innerPageLeftSide_quickBtnStyleP_HOV);
+            } else if($(this).hasClass("btnStyle_2_Border_HOV")){
+                innerPageLeftSide_quickBtnStyleBorder_HOV = $(this).val();
+                $(".quickBtnStyle").addClass("edited");
+                $(this).closest(".colorBlock").find("p").text(innerPageLeftSide_quickBtnStyleBorder_HOV);
+            }  else if($(this).hasClass("innerPageLeftSide_quickBtnStyleName")){
+                innerPageLeftSide_quickBtnStyleName = $(this).val();
+                $(".btnName").addClass("edited");
+                $(this).closest(".colorBlock").find("p").text(innerPageLeftSide_quickBtnStyleName);
+            }
+        })
+
+        $(':root').css('--innerPageLeftSide_quickBtnStyleBG1', innerPageLeftSide_quickBtnStyleBG1);
+        $(':root').css('--innerPageLeftSide_quickBtnStyleBG2', innerPageLeftSide_quickBtnStyleBG2);
+        $(':root').css('--innerPageLeftSide_quickBtnStyleBG3', innerPageLeftSide_quickBtnStyleBG3);
+        $(':root').css('--innerPageLeftSide_quickBtnStyleBG_HOV', innerPageLeftSide_quickBtnStyleBG_HOV);
+        $(':root').css('--innerPageLeftSide_quickBtnStyleBorder', innerPageLeftSide_quickBtnStyleBorder);
+        $(':root').css('--innerPageLeftSide_quickBtnStyleBorder_HOV', innerPageLeftSide_quickBtnStyleBorder_HOV);
+        $(':root').css('--innerPageLeftSide_quickBtnStyleP', innerPageLeftSide_quickBtnStyleP);
+        $(':root').css('--innerPageLeftSide_quickBtnStyleP_HOV', innerPageLeftSide_quickBtnStyleP_HOV);
+        $(':root').css('--innerPageLeftSide_quickBtnStyleName', innerPageLeftSide_quickBtnStyleName);
+    })
+    
+    //關閉彈窗送出修改資訊
+    $(".jumpWindow.quickBtnStyleEdit button.closeCheck").click(function() {
+        $(".filter")
+        .removeClass("display");
+
+        $("div, p, button").each(function(){
+            
+            if($(this).hasClass("quickBtnStyle")) {
+                $(this).addClass("edited");
+            } else if($(this).hasClass("btnName")) {
+                $(this).addClass("edited");
+            }
+        });
     })
 
     $("aside.colorSelector form .custom li .quickBtnStyle").click(function(){
