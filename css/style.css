@@ -221,6 +221,10 @@ header .downList .maintainBox .title {
   font-size: 44px;
 }
 
+main.home {
+  background: var(--subColor_BG-2);
+}
+
 .home .typeList .gameBlock p {
   color: #7c5f30;
   font-size: 26px;

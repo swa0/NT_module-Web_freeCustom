@@ -235,6 +235,9 @@ header .downList .maintainBox .title { //個別調整 //可自定義
 }
 
 //home
+main.home {
+    background: var(--subColor_BG-2);
+}
 .home .typeList .gameBlock p {
     color: $mainColor_subD;
     font-size: 26px;
