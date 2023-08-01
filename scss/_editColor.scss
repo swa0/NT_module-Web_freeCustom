@@ -1,0 +1,379 @@
+:root {
+    --newHeaderTOP_BG: #c4a167;
+    --vip_P: #008599;
+    --user_P: #686868;
+    --total_P: #dbdb11;
+    --platformUl_BG: #ecdabc;
+    --platformUl_Border: #bb9645;
+    --platform_P: #000000;
+    --platformMoney_P: #ff0000;
+    --newHeaderTOP_liP: #ffffff;
+    --newHeaderTOP_liP_HOV: #ffffff;
+    --newHeaderTOP_li_HOV: #ffffff;
+    --newHeaderTDown_BG: #ffffff;
+    --newHeaderTDown_P: #7c5f30;
+    --newHeaderTDownHOV_P: #d2b88c;
+    --newHeaderTDown_Before: #c4a167;
+    --downList_BG: #ffffff;
+    --downList_Border: #cccccc;
+    --downList_P: #000000;
+    --downList_iBtn: #686868;
+    --downList_maintainBox_BG: rgb(0 0 0 / 64%);
+    --downList_maintainBox_P: #ffffff;
+    --downList_maintainBox_titleP: #ffffff;
+    --innerPageLeftSide_userAccountP: #000000;
+    --innerPageLeftSide_userLevelBG: #cfb53d;
+    --innerPageLeftSide_userLevelP: #ffffff;
+    --innerPageLeftSide_joinedDays: #686868;
+    --innerPageLeftSide_quickBtnStyleBG1: #fae8c1;
+    --innerPageLeftSide_quickBtnStyleBG2: #c4a167;
+    --innerPageLeftSide_quickBtnStyleBG3: #fae8c1;
+    --innerPageLeftSide_quickBtnStyleBG_HOV: #c4a167;
+    --innerPageLeftSide_quickBtnStyleBorder: #c4a167;
+    --innerPageLeftSide_quickBtnStyleBorder_HOV: #c4a167;
+    --innerPageLeftSide_quickBtnStyleP: #7c5f30;
+    --innerPageLeftSide_quickBtnStyleP_HOV: #ffffff;
+    --innerPageLeftSide_quickBtnStyleName: #000000;
+    --innerPageLeftSide_innerNavBorder: #cccccc;
+    --innerPageLeftSide_innerNavP: #000000;
+    --innerPageLeftSide_innerNavP_HOV: #7c5f30;
+    --innerPageLeftSide_innerNavI: #c4a167;
+    --innerPageLeftSide_innerNavI_HOV: #7c5f30;
+    --innerPageLeftSide_innerNavBG_HOV: #fae8c1;
+    --innerPageLeftSide_innerNavBG_HOVbefore: #7c5f30;
+    --btnStyle_1_BG1: #fae8c1;
+    --btnStyle_1_BG2: #c4a167;
+    --btnStyle_1_BG3: #fae8c1;
+    --btnStyle_1_BG1_HOV: #c4a167;
+    --btnStyle_1_BG2_HOV: #fae8c1;
+    --btnStyle_1_BG3_HOV: #c4a167;
+    --btnStyle_1_Border: #ffffff;
+    --btnStyle_1_Border_HOV: #ffffff;
+    --btnStyle_1_P: #ffffff;
+    --btnStyle_1_P_HOV: #ffffff;
+    --btnStyle_2_BG1: #ffffff;
+    --btnStyle_2_BG2: #ffffff;
+    --btnStyle_2_BG3: #ffffff;
+    --btnStyle_2_BG1_HOV: #7c5f30;
+    --btnStyle_2_BG2_HOV: #7c5f30;
+    --btnStyle_2_BG3_HOV: #7c5f30;
+    --btnStyle_2_Border: #7c5f30;
+    --btnStyle_2_Border_HOV: #7c5f30;
+    --btnStyle_2_P: #7c5f30;
+    --btnStyle_2_P_HOV: #ffffff;
+    --btnStyle_3_BG1: #ffffff;
+    --btnStyle_3_BG2: #f4f4f4;
+    --btnStyle_3_BG1_HOV: #ffffff;
+    --btnStyle_3_BG2_HOV: #f4f4f4;
+    --btnStyle_3_Border: #cccccc;
+    --btnStyle_3_Border_HOV: #7c5f30;
+    --btnStyle_3_P: #000000;
+    --btnStyle_3_P_HOV: #7c5f30;
+    --btnStyle_4_BG1: #ffffff;
+    --btnStyle_4_BG2: #f4f4f4;
+    --btnStyle_4_BG1_HOV: #c4a167;
+    --btnStyle_4_BG2_HOV: #c4a167;
+    --btnStyle_4_Border: #cccccc;
+    --btnStyle_4_Border_HOV: #c4a167;
+    --btnStyle_4_P: #000000;
+    --btnStyle_4_P_HOV: #ffffff;
+}
+
+//方法說明 ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓
+//(1)在上方root區新增 變數: 
+//   ↪ (程式抓取) => 原規則色碼
+//   ↪ (客戶確認好要交檔) => 新規色碼
+
+//(2)下方欲修改處引用新變數
+
+//客戶後天改ㄉ顏色，不會影響原本的規則；只針對改的地方
+//↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑
+
+
+//客戶可自訂的顏色
+
+//header ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓
+
+//header 上部背景色
+header .top.edited {
+    background: var(--newHeaderTOP_BG);
+}
+
+//未登入ICON
+header .UnLoginBox label i.edited {
+    color: $Font_color_2;
+}
+
+//登入按鈕
+header .UnLoginBox .loginBtn.edited {
+    background: $linear_1;
+    border-color: $Border_color_3;
+    color: $Font_color_2;
+
+    &:hover,&:active,&.active {
+        background: linear-gradient(to bottom, $mainColor_subL 0%, var(--mainColor) 50%, $mainColor_subL 100%);
+        border-color: $Border_color_1;
+    }
+}
+
+//註冊ICON
+header .UnLoginBox .registerBtn i.edited {
+    color: $Font_color_1;
+}
+
+//已登入頁面列
+header .loginBox>li:nth-of-type(3).edited, 
+header .loginBox>li:nth-of-type(4).edited, 
+header .loginBox>li:nth-of-type(5).edited, 
+header .loginBox>li:nth-of-type(6).edited, 
+header .loginBox>li:nth-of-type(7).edited, 
+header .loginBox>li:nth-of-type(8).edited {
+    
+    &:hover,&:active,&.active {
+        background: $mainColor_subD;
+    }
+}
+
+//用戶名
+header .loginBox .userName.edited {
+    color: var(--user_P);
+    
+    span {
+        color: var(--vip_P);
+    }
+}
+
+//平台點數
+header .loginBox>li.total p.edited {
+    color: var(--total_P);
+}
+header .loginBox>li.total i.edited {
+    color: var(--total_P);
+}
+
+//平台點數 UL
+header .loginBox .transferInfo.edited  {
+    background: var(--platformUl_BG);
+    border-color: var(--platformUl_Border);
+}
+header .loginBox .transferInfo li:not(:last-of-type).edited {
+    border-bottom: 1px solid var(--platformUl_Border);
+}
+header .loginBox .transferInfo li.platform p.edited {
+    color: var(--platform_P);
+}
+header .loginBox .transferInfo li p.money.edited {
+    color: var(--platformMoney_P);
+}
+
+//頁面li字色
+header .loginBox li.edited:not(:first-child) a p {
+    color: var(--newHeaderTOP_liP);
+}
+header .loginBox li.edited:not(:first-child) {
+
+    &:hover,&:active,&.active {
+
+        a {
+            background: var(--newHeaderTOP_li_HOV);
+
+            p {
+                color: var(--newHeaderTOP_liP_HOV);
+            }
+        }
+    }
+}
+
+
+//header 下部背景色
+header .bottom.edited {
+    background: var(--newHeaderTDown_BG);
+}
+//header 下部 字色
+header .bottom nav li a p.edited {
+    color: var(--newHeaderTDown_P);
+}
+//header 下部滑入 字色
+header .bottom nav li:hover a p.edited,
+header .bottom nav li:active a p.edited,
+header .bottom nav li.active a p.edited {
+    color: var(--newHeaderTDownHOV_P);
+}
+//header 下部nav 滑入槓槓
+header nav li.edited:hover::before,
+header nav li.edited:active::before,
+header nav li.edited.active::before {
+    background: var(--newHeaderTDown_Before);
+}
+
+
+//header下拉式選單
+header .downList.edited {
+    background: var(--downList_BG);
+    border-top: solid 1px var(--downList_Border);
+}
+header .downList.edited p {
+    color: var(--downList_P);
+}
+//左右按鈕
+header .downList i.edited.fa-solid.fa-chevron-left,
+header .downList i.edited.fa-solid.fa-chevron-right {
+    color: var(--downList_iBtn);
+}
+//遊戲維護狀態
+header .downList .maintainBox.edited {
+    background: var(--downList_maintainBox_BG);
+}
+header .downList .maintainBox.edited p {
+    color: var(--downList_maintainBox_P);
+}
+header .downList .maintainBox.edited p.title {
+    color: var(--downList_maintainBox_titleP);
+}
+
+//innerPage ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓
+
+//leftSide
+main.innerPage .center .leftSide p.userAccount.edited {
+    color: var(--innerPageLeftSide_userAccountP);
+}
+main.innerPage .center .leftSide p.userAccount .level.edited {
+    background: var(--innerPageLeftSide_userLevelBG);
+    color: var(--innerPageLeftSide_userLevelP);
+}
+main.innerPage .center .leftSide p.joinDay.edited {
+    color: var(--innerPageLeftSide_joinedDays);
+}
+main.innerPage .center .leftSide .quickSelect li p.btnName.edited {
+    color: var(--innerPageLeftSide_quickBtnStyleName);
+}
+//nav
+main.innerPage .center .leftSide .innerNav {
+    border-top: 1px solid var(--innerPageLeftSide_innerNavBorder);
+}
+main.innerPage .center .leftSide .innerNav li:nth-of-type(4), 
+main.innerPage .center .leftSide .innerNav li:nth-of-type(9) {
+    border-top: 1px solid var(--innerPageLeftSide_innerNavBorder);
+}
+main.innerPage .center .leftSide .innerNav li.edited a p {
+    color: var(--innerPageLeftSide_innerNavP);
+}
+main.innerPage .center .leftSide .innerNav li.edited a i {
+    color: var(--innerPageLeftSide_innerNavI);
+}
+main.innerPage .center .leftSide .content .innerNav li.edited:hover a,
+main.innerPage .center .leftSide .content .innerNav li.edited:active a,
+main.innerPage .center .leftSide .content .innerNav li.edited.active a {
+    background: var(--innerPageLeftSide_innerNavBG_HOV);
+
+    &::before {
+        background: var(--innerPageLeftSide_innerNavBG_HOVbefore);
+    }
+}
+main.innerPage .center .leftSide .innerNav li.edited:hover a i,
+main.innerPage .center .leftSide .innerNav li.edited:active a i,
+main.innerPage .center .leftSide .innerNav li.edited.active a i {
+    color: var(--innerPageLeftSide_innerNavI_HOV);
+}
+
+//betRecord
+main.innerPage .center .midSide .midBottom .content form .selectBtn_Wrap button.edited {
+    
+    &:hover,&:active,&.active {
+        background: linear-gradient(to bottom, var(--btnStyle_3_BG1_HOV) 40%, var(--btnStyle_3_BG1_HOV) 100%);;
+        color: var(--btnStyle_3_P_HOV);
+    }
+}
+//help
+
+
+//event
+
+//彈窗
+.jumpWindow.quickBtnStyleEdit .content label .outerBox p.btnName {
+    color: var(--innerPageLeftSide_quickBtnStyleName);
+}
+// .jumpWindow.quickBtnStyleEdit .content label .outerBox button.quickBtnStyle.edited {
+//     background: linear-gradient(to top, var(--innerPageLeftSide_quickBtnStyleBG1) 0%, var(--innerPageLeftSide_quickBtnStyleBG2) 50%, var(--innerPageLeftSide_quickBtnStyleBG3) 100%);
+//     border: 1px solid var(--innerPageLeftSide_quickBtnStyleBorder);
+// }
+
+//按鈕樣式 ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓
+.btnStyle_1.edited { //按鈕樣式_1
+    background: linear-gradient(to top, var(--btnStyle_1_BG1) 0%, var(--btnStyle_1_BG2) 50%, var(--btnStyle_1_BG3) 100%);
+    border: 1px solid var(--btnStyle_1_Border);
+    color: var(--btnStyle_1_P);
+
+    &:hover,&:active,&.active {
+        background: linear-gradient(to top, var(--btnStyle_1_BG1_HOV) 0%, var(--btnStyle_1_BG2_HOV) 50%, var(--btnStyle_1_BG3_HOV) 100%);
+        border: 1px solid var(--btnStyle_1_Border_HOV);
+        color: var(--btnStyle_1_P_HOV);
+    }
+
+    // &:disabled {
+    //     background: #c0c0c0;
+    // }
+}
+.btnStyle_2.edited { //按鈕樣式_2 主色邊線按鈕
+    background:  linear-gradient(to top, var(--btnStyle_2_BG1) 0%, var(--btnStyle_2_BG2) 50%, var(--btnStyle_2_BG3) 100%);
+    border: 1px solid var(--btnStyle_2_Border);
+    color: var(--btnStyle_2_P);
+
+    &:hover,&:active,&.active {
+        background:  linear-gradient(to top, var(--btnStyle_2_BG1_HOV) 0%, var(--btnStyle_2_BG2_HOV) 50%, var(--btnStyle_2_BG3_HOV) 100%);
+        border: 1px solid var(--btnStyle_2_Border_HOV);
+        color: var(--btnStyle_2_P_HOV);
+    }
+
+    // &:disabled { 
+    //     background: #c0c0c0 !important;
+    //     color: $Font_color_1 !important;
+    //     border-color: transparent !important;
+    //     cursor: default;
+    // }
+}
+.btnStyle_3.edited { //按鈕樣式_3 灰色邊線變色按鈕
+    background: linear-gradient(to bottom, var(--btnStyle_3_BG1) 40%, var(--btnStyle_3_BG2) 100%);
+    border: 1px solid var(--btnStyle_3_Border);
+    color: var(--btnStyle_3_P);
+
+    &:hover,&:active,&.active {
+        background: linear-gradient(to bottom, var(--btnStyle_3_BG1_HOV) 40%, var(--btnStyle_3_BG1_HOV) 100%);
+        color: var(--btnStyle_3_P_HOV);
+        border-color: var(--btnStyle_3_Border_HOV);
+    }
+}
+.btnStyle_4.edited { //按鈕樣式_4 灰色邊線變色按鈕
+    background: linear-gradient(to bottom, var(--btnStyle_4_BG1) 40%, var(--btnStyle_4_BG2) 100%);
+    border: 1px solid var(--btnStyle_4_Border);
+    color: var(--btnStyle_4_P);
+
+    &:hover,&:active,&.active {
+        background: linear-gradient(to bottom, var(--btnStyle_4_BG1_HOV) 40%, var(--btnStyle_4_BG2_HOV) 100%);
+        border: 1px solid var(--btnStyle_4_Border_HOV);
+        color: var(--btnStyle_4_P_HOV);
+    }
+}
+.quickBtnStyle.edited { //快速按鈕
+    background: linear-gradient(to top, var(--innerPageLeftSide_quickBtnStyleBG1) 0%, var(--innerPageLeftSide_quickBtnStyleBG2) 50%, var(--innerPageLeftSide_quickBtnStyleBG3) 100%);
+    border: 1px solid var(--innerPageLeftSide_quickBtnStyleBorder);
+    color: var(--innerPageLeftSide_quickBtnStyleP);
+
+    a {
+        background: linear-gradient(to top, var(--innerPageLeftSide_quickBtnStyleBG1) 0%, var(--innerPageLeftSide_quickBtnStyleBG2) 50%, var(--innerPageLeftSide_quickBtnStyleBG3) 100%);
+
+        p {
+            color: var(--innerPageLeftSide_quickBtnStyleP);
+        }
+    }
+   
+    &:hover,&:active,&.active {
+        background: var(--innerPageLeftSide_quickBtnStyleBG_HOV);
+        color: var(--innerPageLeftSide_quickBtnStyleP_HOV);
+        border: 1px solid var(--innerPageLeftSide_quickBtnStyleBorder_HOV);
+        
+        p {
+            color: var(--innerPageLeftSide_quickBtnStyleP_HOV);
+        }
+    }
+}
