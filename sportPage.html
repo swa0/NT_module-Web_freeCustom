@@ -5,11 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=0.25">
     <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
     <link rel="shortcut icon" href="../img/NTLOGO_64x64.ico" type="image/x-icon">
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script src="../js/javascript.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="https://kit.fontawesome.com/8858aac5ee.js" crossorigin="anonymous"></script>
     <title>Document</title>
 </head>
@@ -182,12 +180,12 @@
                 <!-- nav -->
                 <nav>
                     <ul>
-                        <li class="active">
+                        <li>
                             <a href="./index.html">
                                 <p>首頁</p>
                             </a>
                         </li>
-                        <li>
+                        <li class="active">
                             <a href="./sportPage.html">
                                 <p>體育賽事</p>
                             </a>
@@ -464,26 +462,35 @@
             </ul>
         </div>
     </header>
-    <main class="home">
-         <!-- banner -->
-        <div class="swiper">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <img class="banner" src="../img/banner.png">
-                </div>
-            </div>
-            <div class="swiper-button-prev">
-                <!-- <i class="prev_ic"></i> -->
-                <i class="fa-solid fa-chevron-left"></i>
-            </div>
-            <div class="swiper-button-next">
-                <!-- <i class="next_ic"></i> -->
-                <i class="fa-solid fa-chevron-right"></i>
-            </div>
-        </div>
-        <!-- mainWrap -->
-        <div class="mainWrap">
+    <main>
+        <!-- gamePage -->
+        <div class="gamePage_Wrap">
             <div class="center">
+                <div class="containerWrap sportPage">
+                    <img class="mainImg" src="../img/partner/sport/sportBG_1.png">
+                    <div class="textBox">
+                        <div class="title">
+                            <p class="big">體育賽事</p>
+                            <p class="small">SPORT GAMES</p>
+                        </div>
+                        <p class="mainCnt">
+                            每月支援全球超過30000 場運動類型投註賽事，提供多元投註方式包含足球、
+                            棒球、籃球及橄欖球等世界主要體育競賽，由專業的資訊管理團隊提供最準確
+                            即時的賽事結果與24小時線上投註服務，更備有亞洲盤、歐洲盤、香港盤、印
+                            尼盤及馬來盤等賠率盤口供玩家選擇。 
+                        </p>
+                            <ul class="btnBox">
+                                <li>
+                                    <img src="../img/partner/sport/sportBtn_1.png">
+                                    <p>36588體育</p>
+                                </li>
+                                <li>
+                                    <img src="../img/partner/sport/sportBtn_2.png">
+                                    <p>平博體育</p>
+                                </li>
+                            </ul>
+                    </div>
+                </div>
                 <!-- 跑馬燈 -->
                 <div class="marqueeWrap">
                     <div class="title">
@@ -492,97 +499,6 @@
                     </div>
                     <div class="marquee">
                         <p>跑馬燈跑馬燈跑馬燈跑馬燈跑馬燈跑馬燈跑馬燈跑馬燈跑馬燈跑馬燈</p>
-                    </div>
-                </div>
-                <!-- 遊戲清單 -->
-                <div class="typeList">
-                    <div class="gameBlock sport">
-                        <img src="../img/enter/36588.png">
-                        <p>36588體育</p>
-                    </div>
-                    <div class="gameBlock live">
-                        <img src="../img/enter/sa.png">
-                        <p>真人沙龍娛樂</p>
-                    </div>
-                    <div class="gameBlock live">
-                        <img src="../img/enter/allbet.png">
-                        <p>歐博真人娛樂</p>
-                    </div>
-                    <div class="gameBlock live">
-                        <img src="../img/enter/dg.png">
-                        <p>DG真人娛樂</p>
-                    </div>
-                    <div class="gameBlock live">
-                        <img src="../img/enter/wm.png">
-                        <p>WM真人娛樂</p>
-                    </div>
-                    <div class="gameBlock live">
-                        <img src="../img/enter/og.png">
-                        <p>OG真人娛樂</p>
-                    </div>
-                    <div class="gameBlock lottery">
-                        <img src="../img/enter/mg.png">
-                        <p>MG棋牌</p>
-                    </div>
-                    <div class="gameBlock board">
-                        <img src="../img/enter/sg88.png">
-                        <p>SG88六合、大樂、539</p>
-                    </div>
-                    <div class="gameBlock lottery">
-                        <img src="../img/enter/gs.png">
-                        <p>京彩彩票</p>
-                    </div>
-                    <div class="gameBlock lottery">
-                        <img src="../img/enter/rwd.png">
-                        <p>白鹿電子娛樂</p>
-                    </div>
-                    <div class="gameBlock slot">
-                        <img src="../img/enter/bng.png">
-                        <p>BNG電子娛樂</p>
-                        <!-- 維護中 -->
-                        <div class="maintainBox">
-                            <div class="text">
-                                <p class="title">維護中</p>
-                                <P class="start">2022/03/02 下午2:00~</P>
-                                <P class="end">2022/03/02 下午4:00</P>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="gameBlock slot">
-                        <img src="../img/enter/tpg.png">
-                        <p>TPG電子娛樂</p>
-                    </div>
-                    <div class="gameBlock slot">
-                        <img src="../img/enter/png.png">
-                        <p>PNG電子娛樂</p>
-                    </div>
-                    <div class="gameBlock board" onclick="window.location.href='boardPageInner.html'">
-                        <img src="../img/enter/px.png">
-                        <p>鳳凰棋牌</p>
-                    </div>
-                    <div class="gameBlock slot">
-                        <img src="../img/enter/rsg.png">
-                        <p>RSG電子娛樂</p>
-                    </div>
-                    <div class="gameBlock slot">
-                        <img src="../img/enter/bwin.png">
-                        <p>必贏電子娛樂</p>
-                    </div>
-                    <div class="gameBlock slot">
-                        <img src="../img/enter/ifun.png">
-                        <p>IFUN電子娛樂</p>
-                    </div>
-                    <div class="gameBlock slot">
-                        <img src="../img/enter/sp.png">
-                        <p>SP電子娛樂</p>
-                    </div>
-                    <div class="gameBlock slot">
-                        <img src="../img/enter/pls.png">
-                        <p>PLS電子娛樂</p>
-                    </div>
-                    <div class="gameBlock fish">
-                        <img src="../img/enter/fish.png" onclick="window.location.href='fishPageInner.html'">
-                        <p>捕魚機</p>
                     </div>
                 </div>
             </div>
@@ -1032,61 +948,7 @@
         </div>
     </footer>
     <!-- 彈窗 -->
-    <div class="filter display">
-        <!-- 最新公告 -->
-        <div class="jumpWindow news display">
-            <div class="title">
-                <p>最新消息</p>
-                <!-- <i class="close_ic"></i> -->
-                <i class="fa-solid fa-xmark closeWindow"></i>
-            </div>
-            <div class="content">
-                <ul>
-                    <li class="typeList">
-                        <button class="hot active">熱門</button>
-                        <button class="normal">一般</button>
-                        <button class="deposit">存款</button>
-                    </li>
-                    <ol class="hotBox display">
-                        <li>
-                            <p class="text">公告公告公告公告公告公告公告公告公告公告公告公告公告公告公告公告公告公告</p>
-                            <p class="date">2020-01-01</p>
-                        </li>
-                        <li>
-                            <p class="text">公告公告公告公告公告公告公告公告公告公告公告公告公告公告公告公告公告公公告公告公告公告公告公告公告公告公告</p>
-                            <p class="date">2020-01-01</p>
-                        </li>
-                        <li>
-                            <p class="text">公告</p>
-                            <p class="date">2020-01-02</p>
-                        </li>
-                        <li>
-                            <p class="text">公告</p>
-                            <p class="date">2020-01-02</p>
-                        </li>
-                        <li>
-                            <p class="text">公告</p>
-                            <p class="date">2020-01-02</p>
-                        </li>
-                        <li>
-                            <p class="text">公告</p>
-                            <p class="date">2020-01-02</p>
-                        </li>
-                        <li>
-                            <p class="text">公告</p>
-                            <p class="date">2020-01-02</p>
-                        </li>
-                    </ol>
-                    <ol class="normalBox">
-                        <li>
-                            <p class="text">公告公告公告公告公告公告公告公告公告公告公告公告公告公告公告公告公告公告</p>
-                            <p class="date">2020-01-01</p>
-                        </li>
-                    </ol>
-                    <ol class="depositBox"></ol>
-                </ul>
-            </div>
-        </div>
+    <div class="filter">
          <!-- 快速轉帳 -->
          <div class="jumpWindow quickTransfer">
             <div class="title">
@@ -1137,12 +999,66 @@
                                 <p>全部</p>
                             </button>
                         </div>
-                        <button type="button" class="btnStyle_1 checkBtn closeWindow">確定</button>
+                        <button type="button" class="btnStyle_1 checkBtn">確定</button>
                     </label>
                 </form>
             </div>
             <div class="btnBox">
                 <button class="btnStyle_1">進入遊戲</button>
+            </div>
+        </div>
+        <!-- 最新公告 -->
+        <div class="jumpWindow news">
+            <div class="title">
+                <p>最新消息</p>
+                <!-- <i class="close_ic"></i> -->
+                <i class="fa-solid fa-xmark closeWindow"></i>
+            </div>
+            <div class="content">
+                <ul>
+                    <li class="typeList">
+                        <button class="hot active">熱門</button>
+                        <button class="normal">一般</button>
+                        <button class="deposit">存款</button>
+                    </li>
+                    <ol class="hotBox display">
+                        <li>
+                            <p class="text">公告公告公告公告公告公告公告公告公告公告公告公告公告公告公告公告公告公告</p>
+                            <p class="date">2020-01-01</p>
+                        </li>
+                        <li>
+                            <p class="text">公告公告公告公告公告公告公告公告公告公告公告公告公告公告公告公告公告公公告公告公告公告公告公告公告公告公告</p>
+                            <p class="date">2020-01-01</p>
+                        </li>
+                        <li>
+                            <p class="text">公告</p>
+                            <p class="date">2020-01-02</p>
+                        </li>
+                        <li>
+                            <p class="text">公告</p>
+                            <p class="date">2020-01-02</p>
+                        </li>
+                        <li>
+                            <p class="text">公告</p>
+                            <p class="date">2020-01-02</p>
+                        </li>
+                        <li>
+                            <p class="text">公告</p>
+                            <p class="date">2020-01-02</p>
+                        </li>
+                        <li>
+                            <p class="text">公告</p>
+                            <p class="date">2020-01-02</p>
+                        </li>
+                    </ol>
+                    <ol class="normalBox">
+                        <li>
+                            <p class="text">公告公告公告公告公告公告公告公告公告公告公告公告公告公告公告公告公告公告</p>
+                            <p class="date">2020-01-01</p>
+                        </li>
+                    </ol>
+                    <ol class="depositBox"></ol>
+                </ul>
             </div>
         </div>
         <!-- 客製化快速按鈕彈窗 -->
@@ -1587,6 +1503,6 @@
             </div>
         </div>
     </div>
-    <div class="bg"></div>
+    <div class="bg gamePage_BG"></div>
 </body>
 </html>

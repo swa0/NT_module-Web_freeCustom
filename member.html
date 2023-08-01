@@ -5,11 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=0.25">
     <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
     <link rel="shortcut icon" href="../img/NTLOGO_64x64.ico" type="image/x-icon">
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script src="../js/javascript.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="https://kit.fontawesome.com/8858aac5ee.js" crossorigin="anonymous"></script>
     <title>Document</title>
 </head>
@@ -141,7 +139,7 @@
                             <p>提款</p>
                         </a>
                     </li>
-                    <li>
+                    <li class="active">
                         <a href="./member.html">
                             <p>會員中心</p>
                         </a>
@@ -182,7 +180,7 @@
                 <!-- nav -->
                 <nav>
                     <ul>
-                        <li class="active">
+                        <li>
                             <a href="./index.html">
                                 <p>首頁</p>
                             </a>
@@ -464,129 +462,443 @@
             </ul>
         </div>
     </header>
-    <main class="home">
-         <!-- banner -->
-        <div class="swiper">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <img class="banner" src="../img/banner.png">
-                </div>
+    <main class="innerPage">
+        <!-- 跑馬燈 -->
+        <div class="marqueeWrap">
+            <div class="title">
+                <!-- <i class="marquee_ic"> -->
+                <p>最新資訊</p>
             </div>
-            <div class="swiper-button-prev">
-                <!-- <i class="prev_ic"></i> -->
-                <i class="fa-solid fa-chevron-left"></i>
-            </div>
-            <div class="swiper-button-next">
-                <!-- <i class="next_ic"></i> -->
-                <i class="fa-solid fa-chevron-right"></i>
+            <div class="marquee">
+                <p>跑馬燈跑馬燈跑馬燈跑馬燈跑馬燈跑馬燈跑馬燈跑馬燈跑馬燈跑馬燈</p>
             </div>
         </div>
-        <!-- mainWrap -->
-        <div class="mainWrap">
-            <div class="center">
-                <!-- 跑馬燈 -->
-                <div class="marqueeWrap">
-                    <div class="title">
-                        <!-- <i class="marquee_ic"> -->
-                        <p>最新資訊</p>
-                    </div>
-                    <div class="marquee">
-                        <p>跑馬燈跑馬燈跑馬燈跑馬燈跑馬燈跑馬燈跑馬燈跑馬燈跑馬燈跑馬燈</p>
-                    </div>
-                </div>
-                <!-- 遊戲清單 -->
-                <div class="typeList">
-                    <div class="gameBlock sport">
-                        <img src="../img/enter/36588.png">
-                        <p>36588體育</p>
-                    </div>
-                    <div class="gameBlock live">
-                        <img src="../img/enter/sa.png">
-                        <p>真人沙龍娛樂</p>
-                    </div>
-                    <div class="gameBlock live">
-                        <img src="../img/enter/allbet.png">
-                        <p>歐博真人娛樂</p>
-                    </div>
-                    <div class="gameBlock live">
-                        <img src="../img/enter/dg.png">
-                        <p>DG真人娛樂</p>
-                    </div>
-                    <div class="gameBlock live">
-                        <img src="../img/enter/wm.png">
-                        <p>WM真人娛樂</p>
-                    </div>
-                    <div class="gameBlock live">
-                        <img src="../img/enter/og.png">
-                        <p>OG真人娛樂</p>
-                    </div>
-                    <div class="gameBlock lottery">
-                        <img src="../img/enter/mg.png">
-                        <p>MG棋牌</p>
-                    </div>
-                    <div class="gameBlock board">
-                        <img src="../img/enter/sg88.png">
-                        <p>SG88六合、大樂、539</p>
-                    </div>
-                    <div class="gameBlock lottery">
-                        <img src="../img/enter/gs.png">
-                        <p>京彩彩票</p>
-                    </div>
-                    <div class="gameBlock lottery">
-                        <img src="../img/enter/rwd.png">
-                        <p>白鹿電子娛樂</p>
-                    </div>
-                    <div class="gameBlock slot">
-                        <img src="../img/enter/bng.png">
-                        <p>BNG電子娛樂</p>
-                        <!-- 維護中 -->
-                        <div class="maintainBox">
-                            <div class="text">
-                                <p class="title">維護中</p>
-                                <P class="start">2022/03/02 下午2:00~</P>
-                                <P class="end">2022/03/02 下午4:00</P>
+        <dic class="center">
+            <!-- 左欄 -->
+            <div class="leftSide">
+                <div class="content">
+                    <p class="userAccount">
+                        bbb123
+                        <span class="level">
+                            VIP20
+                        </span>
+                    </p>
+                    <p class="joinDay">加入通博第 799 天</p>
+                    <ul class="quickSelect">
+                        <li>
+                            <div class="quickBtnStyle">
+                                <a href="./deposit.html">
+                                    <p>存</p>
+                                </a>
                             </div>
-                        </div>
+                            <p class="btnName">存款</p>
+                        </li>
+                        <li>
+                            <div class="quickBtnStyle">
+                                <a href="./transfer.html">
+                                    <p>轉</p>
+                                </a>
+                            </div>
+                            <p class="btnName">轉帳</p>
+                        </li>
+                        <li>
+                            <div class="quickBtnStyle">
+                                <a href="./withdraw.html">
+                                    <p>提</p>
+                                </a>
+                            </div>
+                            <p class="btnName">提款</p>
+                        </li>
+                    </ul>
+                    <ul class="innerNav">
+                        <li class="active">
+                            <a href="./member.html">
+                                <i class="fa-solid fa-user"></i>
+                                <p>個人資料</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./invite.html">
+                                <i class="fa-solid fa-bullhorn"></i>
+                                <p>邀請會員</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./vip.html">
+                                <i class="fa-solid fa-crown"></i>
+                                <p>VIP會員</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./wallet.html">
+                                <i class="fa-solid fa-wallet"></i>
+                                <p>我的錢包</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./bankCard.html">
+                                <i class="fa-regular fa-credit-card"></i>
+                                <p>綁定銀行卡</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./dealRecord.html">
+                                <i class="fa-regular fa-file-lines"></i>
+                                <p>交易紀錄</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./point.html">
+                                <i class="fa-solid fa-envelope-open-text"></i>
+                                <p>查詢紅利</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./betRecord.html">
+                                <i class="fa-solid fa-mobile-screen-button"></i>
+                                <p>投注紀錄</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./eventApply.html">
+                                <i class="fa-solid fa-tag"></i>
+                                <p>優惠申請</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./mail.html">
+                                <i class="fa-regular fa-envelope"></i>
+                                <p>站內信</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- 中欄 -->
+            <div class="midSide memberCenter">
+                <div class="midTop">
+                    <div class="innerPageTitle">
+                        <p>個人資料</p>
                     </div>
-                    <div class="gameBlock slot">
-                        <img src="../img/enter/tpg.png">
-                        <p>TPG電子娛樂</p>
+                    <div class="objectList memberData_state">
+                        <p class="info">帳戶安全等級：
+                            <span>低</span>
+                        </p>
+                        <p class="info">為了確保您的帳戶安全，請填寫相關安全信息，以備不時之需</p>
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-user"></i>
+                                <p>填寫基本資料</p>
+                            </li>
+                            <li class="active">
+                                <i class="fa-solid fa-mobile-screen-button"></i>
+                                <p>綁定手機號碼</p>
+                            </li>
+                            <li>
+                                <i class="fa-regular fa-credit-card"></i>
+                                <p>添加銀行卡</p>
+                            </li>
+                            <li>
+                                <i class="fa-regular fa-envelope"></i>
+                                <p>填寫電子郵件</p>
+                            </li>
+                        </ul>
                     </div>
-                    <div class="gameBlock slot">
-                        <img src="../img/enter/png.png">
-                        <p>PNG電子娛樂</p>
+                </div>
+                <ul class="midPageList">
+                    <li class="active">
+                        <p>基本資料</p>
+                    </li>
+                    <li>
+                        <p>平台帳號密碼</p>
+                    </li>
+                </ul>
+                <div class="midBottom">
+                    <div class="content display">
+                        <p class="titleM">基本資料</p>
+                        <form>
+                            <div class="half">
+                                <label>
+                                    <p class="itemName">
+                                        <span>※</span>
+                                        真實姓名
+                                    </p>
+                                    <input class="inputStyle_1" placeholder="使用者真實姓名" disabled>
+                                    <p class="remind">姓名需與銀行卡持卡人姓名一致，否則無法提款!</p>
+                                </label>
+                                <label>
+                                    <p class="itemName">
+                                        <span>※</span>
+                                        生日
+                                    </p>
+                                    <input type="date" class="inputStyle_1">
+                                    <i class="fa-regular fa-calendar"></i>
+                                </label>
+                                <label>
+                                    <p class="itemName">
+                                        <span></span>
+                                        聯絡電話
+                                    </p>
+                                    <input class="inputStyle_2" value="0988997664" disabled>
+                                    <button type="button" class="btnStyle_1 changeBtn callChangeNum">修改</button>
+                                </label>
+                                <label>
+                                    <p class="itemName">
+                                        <span>※</span>
+                                        Email
+                                    </p>
+                                    <input class="inputStyle_1">
+                                </label>
+                                <label>
+                                    <p class="itemName">
+                                        <span></span>
+                                        地址
+                                    </p>
+                                    <input class="inputStyle_1">
+                                </label>
+                                <label>
+                                    <p class="itemName">
+                                        <span>※</span>
+                                        LINE
+                                    </p>
+                                    <input class="inputStyle_1">
+                                    <p class="remind">line與WeChat擇一填寫即可</p>
+                                </label>
+                                <label>
+                                    <p class="itemName">
+                                        <span>※</span>
+                                        WeChat
+                                    </p>
+                                    <input class="inputStyle_1">
+                                    <p class="remind">line與WeChat擇一填寫即可</p>
+                                </label>
+                                <button type="submit" class="submitBtn btnStyle_1">保存資料</button>
+                                <p class="remind">基本資料有誤? 請
+                                    <span>聯繫客服</span>
+                                </p>
+                            </div>
+                            <div class="half">
+                                <label>
+                                    <p class="itemName">
+                                        <span></span>
+                                        遊戲帳號
+                                    </p>
+                                    <input class="inputStyle_2" placeholder="bbb123" disabled>
+                                </label>
+                                <label>
+                                    <p class="itemName">
+                                        <span></span>
+                                        邀請碼
+                                    </p>
+                                    <input class="inputStyle_2" placeholder="bbb123" disabled>
+                                    <button type="button" class="btnStyle_2">點擊及複製</button>
+                                </label>
+                                <label>
+                                    <p class="itemName">
+                                        <span></span>
+                                        推廣網址
+                                    </p>
+                                    <input class="inputStyle_1" placeholder="https://mbfe.op8899.net/#/register/?code=M54ea858">
+                                    <button type="button" class="btnStyle_2">點擊及複製</button>
+                                </label>
+                            </div>
+                        </form>
+                        <p class="titleM">修改密碼</p>
+                        <label class="changePassWord">
+                            <p class="itemName">
+                                <span>※</span>
+                                真實姓名
+                            </p>
+                            <input class="inputStyle_1" value="******" disabled>
+                            <button type="button" class="btnStyle_1 changeBtn callChangePW">修改</button>
+                        </label>
                     </div>
-                    <div class="gameBlock board" onclick="window.location.href='boardPageInner.html'">
-                        <img src="../img/enter/px.png">
-                        <p>鳳凰棋牌</p>
-                    </div>
-                    <div class="gameBlock slot">
-                        <img src="../img/enter/rsg.png">
-                        <p>RSG電子娛樂</p>
-                    </div>
-                    <div class="gameBlock slot">
-                        <img src="../img/enter/bwin.png">
-                        <p>必贏電子娛樂</p>
-                    </div>
-                    <div class="gameBlock slot">
-                        <img src="../img/enter/ifun.png">
-                        <p>IFUN電子娛樂</p>
-                    </div>
-                    <div class="gameBlock slot">
-                        <img src="../img/enter/sp.png">
-                        <p>SP電子娛樂</p>
-                    </div>
-                    <div class="gameBlock slot">
-                        <img src="../img/enter/pls.png">
-                        <p>PLS電子娛樂</p>
-                    </div>
-                    <div class="gameBlock fish">
-                        <img src="../img/enter/fish.png" onclick="window.location.href='fishPageInner.html'">
-                        <p>捕魚機</p>
+                    <div class="content">
+                        <p class="titleM">平臺帳號密碼</p>
+                        <table>
+                            <tr>
+                                <th>
+                                    <p>代碼</p>
+                                </th>
+                                <th>
+                                    <p>平臺名稱</p>
+                                </th>
+                                <th>
+                                    <p>玩家ID</p>
+                                </th>
+                                <th>
+                                    <p>密碼</p>
+                                </th>
+                                <th>
+                                    <p>狀態</p>
+                                </th>
+                                <th>
+                                    <p>最後登入</p>
+                                </th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>Allbet</p>
+                                </td>
+                                <td>
+                                    <p>歐博真人娛樂</p>
+                                </td>
+                                <td>
+                                    <p>dded4083db3iv</p>
+                                </td>
+                                <td>
+                                    <p>164180707000</p>
+                                </td>
+                                <td>
+                                    <p>啟用</p>
+                                </td>
+                                <td>
+                                    <p>-</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>SA</p>
+                                </td>
+                                <td>
+                                    <p>沙龍真人娛樂</p>
+                                </td>
+                                <td>
+                                    <p>4046ae76b4@au8</p>
+                                </td>
+                                <td>
+                                    <p>16418074331f</p>
+                                </td>
+                                <td>
+                                    <p>啟用</p>
+                                </td>
+                                <td>
+                                    <p>-</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>WM</p>
+                                </td>
+                                <td>
+                                    <p>WM真人娛樂</p>
+                                </td>
+                                <td>
+                                    <p>9f61ba826f</p>
+                                </td>
+                                <td>
+                                    <p>164180682467</p>
+                                </td>
+                                <td>
+                                    <p>啟用</p>
+                                </td>
+                                <td>
+                                    <p>-</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>MGMG</p>
+                                </td>
+                                <td>
+                                    <p>MG棋牌</p>
+                                </td>
+                                <td>
+                                    <p>6812394141</p>
+                                </td>
+                                <td>
+                                    <p>164180664215</p>
+                                </td>
+                                <td>
+                                    <p>啟用</p>
+                                </td>
+                                <td>
+                                    <p>-</p>
+                                </td>
+                            </tr>
+                        </table>
                     </div>
                 </div>
             </div>
-        </div>
+            <!-- 右欄 -->
+            <div class="rightSide">
+                <div class="containerBox">
+                    <div class="listTitle">
+                        <p>投注紀錄</p>
+                        <a href="javascript:;" class="more">
+                            更多
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </a>
+                    </div>
+                    <nav class="recordList">
+                        <ul class="contain">
+                            <li class="betHistory">
+                                <p class="state gameName">
+                                    BNG娛樂
+                                </p>
+                                <div class="winLose">
+                                    <p class="half">
+                                        <span>投注</span>
+                                        $ 24
+                                    </p>
+                                    <p class="half lose">
+                                        <span>輸贏</span>
+                                        $ -17
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="betHistory">
+                                <p class="state gameName">
+                                    BNG娛樂
+                                </p>
+                                <div class="winLose">
+                                    <p class="half">
+                                        <span>投注</span>
+                                        $ 24
+                                    </p>
+                                    <p class="half win">
+                                        <span>輸贏</span>
+                                        $ 666
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="betHistory">
+                                <p class="state gameName">
+                                    BNG娛樂
+                                </p>
+                                <div class="winLose">
+                                    <p class="half">
+                                        <span>投注</span>
+                                        $ 24
+                                    </p>
+                                    <p class="half lose">
+                                        <span>輸贏</span>
+                                        $ -17
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="containerBox">
+                    <div class="listTitle">
+                        <p>優惠中心</p>
+                        <a href="./event.html" class="more">
+                            更多
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </a>
+                    </div>
+                    <nav class="recordList">
+                        <ul class="contain">
+                            <li class="eventBlock">
+                                <img class="eventImg" alt="eventImg" src="../img/eventImg.png">
+                                <p class="eventInfo">活動活動活動活動活動活動活動活動活動活動活動活動活動活動活動活動活動</p>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </dic>
     </main>
     <!-- 懸浮按鈕 -->
     <aside class="app">
@@ -1032,9 +1344,53 @@
         </div>
     </footer>
     <!-- 彈窗 -->
-    <div class="filter display">
+    <div class="filter">
+        <!-- 更換聯電 -->
+        <div class="jumpWindow changePhone">
+            <div class="title">
+                <p>提示</p>
+                <!-- <i class="close_ic"></i> -->
+                <i class="fa-solid fa-xmark closeWindow"></i>
+            </div>
+            <div class="content">
+                <p class="text">原有號碼: 0988997664</p>
+                <label>
+                    <input class="inputStyle_1" placeholder="請輸入新手機號碼">
+                    <button class="btnStyle_2">取得認證碼</button>
+                </label>
+                <label>
+                    <input class="inputStyle_1" placeholder="認證碼">
+                </label>
+            </div>
+            <div class="btnBox">
+                <button class="closeWindow btnStyle_1">確認</button>
+                <p class="remind">送出驗證碼後，請立即聯繫在線客服</p>
+            </div>
+        </div>
+        <!-- 更換密碼 -->
+        <div class="jumpWindow changePW">
+            <div class="title">
+                <p>提示</p>
+                <!-- <i class="close_ic"></i> -->
+                <i class="fa-solid fa-xmark closeWindow"></i>
+            </div>
+            <div class="content">
+                <label>
+                    <input class="inputStyle_1" placeholder="舊登入密碼">
+                </label>
+                <label>
+                    <input class="inputStyle_1" placeholder="新登入密碼">
+                </label>
+                <label>
+                    <input class="inputStyle_1" placeholder="確認新密碼">
+                </label>
+            </div>
+            <div class="btnBox">
+                <button class="closeWindow btnStyle_1">確認</button>
+            </div>
+        </div>
         <!-- 最新公告 -->
-        <div class="jumpWindow news display">
+        <div class="jumpWindow news">
             <div class="title">
                 <p>最新消息</p>
                 <!-- <i class="close_ic"></i> -->
@@ -1085,64 +1441,6 @@
                     </ol>
                     <ol class="depositBox"></ol>
                 </ul>
-            </div>
-        </div>
-         <!-- 快速轉帳 -->
-         <div class="jumpWindow quickTransfer">
-            <div class="title">
-                <p>快速轉帳</p>
-                <!-- <i class="close_ic"></i> -->
-                <i class="fa-solid fa-xmark closeWindow"></i>
-            </div>
-            <div class="content">
-                <form>
-                    <label>
-                        <p class="itemName">平台</p>
-                        <p class="platformName">36588</p>
-                    </label>
-                    <label>
-                        <p class="itemName">中心錢包</p>
-                        <input type="text" class="inputStyle_1" value="$9999" disabled>
-                    </label>
-                    <label>
-                        <i class="fa-solid fa-down-long"></i>
-                    </label>
-                    <label>
-                        <p class="itemName">BNG電子娛樂</p>
-                        <input type="text" class="inputStyle_1" value="$0" disabled>
-                    </label>
-                    <label>
-                        <p class="itemName">轉帳金額</p>
-                        <input type="text" class="inputStyle_1" value="$100">
-                        <div class="transferBtn_Box">
-                            <button type="button" class="btnStyle_3 active">
-                                <p>$100</p>
-                            </button>
-                            <button type="button" class="btnStyle_3">
-                                <p>$500</p>
-                            </button>
-                            <button type="button" class="btnStyle_3">
-                                <p>$1000</p>
-                            </button>
-                            <button type="button" class="btnStyle_3">
-                                <p>$3000</p>
-                            </button>
-                            <button type="button" class="btnStyle_3">
-                                <p>$5000</p>
-                            </button>
-                            <button type="button" class="btnStyle_3">
-                                <p>$10000</p>
-                            </button>
-                            <button type="button" class="btnStyle_3">
-                                <p>全部</p>
-                            </button>
-                        </div>
-                        <button type="button" class="btnStyle_1 checkBtn closeWindow">確定</button>
-                    </label>
-                </form>
-            </div>
-            <div class="btnBox">
-                <button class="btnStyle_1">進入遊戲</button>
             </div>
         </div>
         <!-- 客製化快速按鈕彈窗 -->
